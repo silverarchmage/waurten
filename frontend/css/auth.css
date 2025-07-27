@@ -48,14 +48,13 @@ h1{
     margin-bottom:20px;
     margin-top:0;
 }
-.form-textarea,
-.form-input{
+.form-textarea,.form-input{
     width:300px;
     padding:5px;
     border:1px solid var(--dark-bg);
     background-color:#ffffff3b;
     margin-bottom:15px;
-    font-family:var(--dark-bg);
+    color:var(--dark-bg);
     font-family:var(--font-family);
     padding:8px 16px
 }
