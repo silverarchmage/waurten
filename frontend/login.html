@@ -2,21 +2,33 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Connexion</title>
         <meta name="description" content="">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/auth.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="app_logo">
-                <!--App logo-->
+            <div class="app-logo">
+                <img src="assets/img/logo/waurten.svg" alt="Logo Waurten" width="45" height="45">
+                <span>Waurten</span>
             </div>
         </header>
         <main>
             <div class="signup-container">
-                <form class="signup-form" id="signupForm">
+                <form class="signup-form log" id="loginForm">
+                    <div class="circle-icons ci-top" style="margin-bottom: 100px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-icon lucide-circle">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-icon lucide-circle">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                    </div>
                     <h1>Se connecter</h1>
                     <div class="form-group">
                         <input type="email" id="Email" class="form-input" placeholder="Email" required>
@@ -24,11 +36,19 @@
                     <div class="form-group">
                         <input type="password" id="password" class="form-input" placeholder="Prenom" required>
                     </div>
-                    <div class="form-group">
-                        <button type="submit" class="form-button">Soumettre votre demande d’adhésion</button>
+                    <div class="form-group button">
+                        <button type="submit" class="form-button">Se connecter</button>
                     </div>
                     <div>
-                        <p>Pas encore de compte ? <a href="signup">Demander une adhésion</a></p>
+                        <p>Pas encore de compte ? <a href="signup.html">Demander une adhésion</a></p>
+                    </div>
+                    <div class="circle-icons ci-top" style="margin-top: 100px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-icon lucide-circle">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-icon lucide-circle">
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
                     </div>
                 </form>
             </div>

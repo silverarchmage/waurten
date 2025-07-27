@@ -5,28 +5,42 @@
     --dark-cf:#f0f0f0;
     --link-color:#0051ff;
     --font-family:'Open Sans', sans-serif;
+    --fsp:0.9em;
 }
 body{
     margin: 0;
 }
 a{
-    color:var(--light-cf);
+    color:var(--link-color);
     font-weight:bold;
     text-decoration:none;
 }
+.app-logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 5% 0 20px;
+    gap: 10px;
+}
+.app-logo span{
+    font-family:var(--font-family);
+    font-size:1.5em;
+    color:var(--light-cf);
+    font-weight: bold;
+}
 .signup-container{
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
 }
 .signup-form{
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    align-items: center;
     justify-content:center;
     border:1px solid var(--dark-bg);
-    padding:20px 100px 20px 100px;
-    box-shadow:20px 20px #000;
+    padding:1px 10px;
+    box-shadow:20px 20px #0f0f0f;
 }
 h1{
     text-align:center;
@@ -54,6 +68,9 @@ textarea::placeholder{
     color:var(--light-cf) !important;
     font-size:1.2em;
 }
+.button{
+    width: 67%;
+}
 button.form-button{
     background:var(--dark-bg);
     color:var(--dark-cf);
@@ -67,9 +84,9 @@ button.form-button{
     transition:all 0.4s ease;
 }
 button.form-button:hover{
-    color:#f0f0f099;
-    background:#0f0f0f44;
-    box-shadow:5px 5px #000;
+    color:var(--light-cf);
+    background:#fff;
+    box-shadow:5px 5px #0f0f0f;
     transition:all 0.1s ease;
 }
 button.form-button:active{
@@ -81,4 +98,42 @@ p{
     margin-top:20px;
     text-align:center;
     font-family:var(--font-family);
+    font-size: var(--fsp);
+}
+.circle-icons{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.ci-top{
+    top: 10px;
+    margin-bottom: 20px;
+}
+.ci-bottom{
+    margin-top: 20px;
+    bottom: 10px;
+}
+.ci-top,.ci-bottom{
+    width: 500px;
+}
+@media screen and (max-width:440px){
+    .signup-form{
+        border: none;
+        box-shadow: none;
+        margin-top: 0;
+    }
+    .circle-icons{
+        display: none;
+    }
+    .button{
+        width: 100%;
+    }
+    .log{
+        margin-top: 15vh;
+    }
+}
+@media screen and (max-width:884px){
+    .signup-form{
+        margin-top: 10vh;
+    }
 }
