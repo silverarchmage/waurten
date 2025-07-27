@@ -50,7 +50,6 @@ h1{
 }
 .form-textarea,.form-input{
     width:300px;
-    padding:5px;
     border:1px solid var(--dark-bg);
     background-color:#ffffff3b;
     margin-bottom:15px;
