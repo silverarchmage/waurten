@@ -36,7 +36,7 @@ a{
 .signup-form{
     display:flex;
     flex-direction:column;
-    align-items: center;
+    align-items:center;
     justify-content:center;
     border:1px solid var(--dark-bg);
     padding:1px 10px;
@@ -55,7 +55,11 @@ h1{
     margin-bottom:15px;
     color:var(--dark-bg);
     font-family:var(--font-family);
-    padding:8px 16px
+    padding:8px 16px;
+    outline: none;
+}
+input[type="text"],textarea{
+    font-size:0.8em;
 }
 .form-textarea{
     height:80px;
@@ -67,13 +71,12 @@ textarea::placeholder{
     font-size:1.2em;
 }
 .button{
-    width: 67%;
+    width:67%;
 }
 button.form-button{
     background:var(--dark-bg);
     color:var(--dark-cf);
     padding:8px 16px;
-    border:none;
     cursor:pointer;
     border:1px solid var(--dark-bg);
     width:100%;
@@ -83,7 +86,7 @@ button.form-button{
 }
 button.form-button:hover{
     color:var(--light-cf);
-    background:#fff;
+    background:transparent;
     box-shadow:5px 5px #0f0f0f;
     transition:all 0.1s ease;
 }
@@ -104,34 +107,34 @@ p{
     justify-content: space-between;
 }
 .ci-top{
-    top: 10px;
-    margin-bottom: 20px;
+    top:10px;
+    margin-bottom:20px;
 }
 .ci-bottom{
-    margin-top: 20px;
-    bottom: 10px;
+    margin-top:20px;
+    bottom:10px;
 }
 .ci-top,.ci-bottom{
-    width: 500px;
+    width:500px;
 }
 @media screen and (max-width:440px){
     .signup-form{
-        border: none;
-        box-shadow: none;
-        margin-top: 0;
+        border:none;
+        box-shadow:none;
+        margin-top:0;
     }
     .circle-icons{
-        display: none;
+        display:none;
     }
     .button{
-        width: 100%;
+        width:100%;
     }
     .log{
-        margin-top: 15vh;
+        margin-top:15vh;
     }
 }
 @media screen and (max-width:884px){
     .signup-form{
-        margin-top: 10vh;
+        margin-top:10vh;
     }
 }

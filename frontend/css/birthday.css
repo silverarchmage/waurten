@@ -1,0 +1,31 @@
+.date-wrapper{
+    border:1px solid var(--dark-bg);
+    width:300px;
+    border-radius:0;
+    display:flex;
+    padding:8px 16px;
+}
+.day{
+    border:none;
+    outline:none;
+}
+.short-input{
+    width:20px;
+}
+.mm-input{
+    width: 25px;
+    text-align:center;
+}
+.long-input{
+    width:40px;
+}
+input[type="text"]{
+    font-size:0.8em;
+}
+.error-msg{
+    color: red;
+    font-family: var(--font-family);
+    font-size:12px;
+    margin-top:5px;
+    display:none;
+}

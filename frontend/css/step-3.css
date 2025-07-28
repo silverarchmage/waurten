@@ -1,0 +1,9 @@
+.form-nput{
+    width:300px;
+    border:1px solid var(--dark-bg);
+    background-color:#ffffff3b;
+    color:var(--dark-bg);
+    font-family:var(--font-family);
+    padding:8px 16px;
+    outline: none;
+}
