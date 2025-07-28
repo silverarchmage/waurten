@@ -13,7 +13,7 @@
       if (input.value.length === input.maxLength && index < arr.length - 1) {
         arr[index + 1].focus();
       }
-      hideError(); // Masquer l'erreur dès qu'on saisit
+      hideError(); // Masquer l'erreur dès qu'on saisi
     });
 
     input.addEventListener("keydown", (e) => {
